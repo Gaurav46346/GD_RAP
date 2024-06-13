@@ -8,7 +8,7 @@ CLASS zcl_hello_world_gd DEFINITION
     INTERFACES if_oo_adt_classrun .
   PROTECTED SECTION.
   PRIVATE SECTION.
-ENDCLASS.
+ENDCLASS.dad
 
 
 
