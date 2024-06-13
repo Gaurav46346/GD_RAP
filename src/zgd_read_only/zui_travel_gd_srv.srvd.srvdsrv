@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definition'
+define service ZUI_TRAVEL_GD_SRV {
+  expose ZC_GD_TRAVEL  as Travel;
+  expose ZC_GD_BOOKING as Booking;
+}

@@ -1,0 +1,11 @@
+@EndUserText.label: 'Travel Service Definition'
+define service ZUI_GD_TRAVEL_M {
+  expose ZC_GD_TRAVEL_M    as Travel;
+  expose ZC_GD_BOOKING_M   as Booking;
+  expose /DMO/I_Agency;
+  expose /DMO/I_Customer;
+  expose /DMO/I_Connection;
+  expose /DMO/I_Carrier;
+  expose /DMO/I_Flight;
+  expose I_Currency;
+}
