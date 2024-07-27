@@ -7,5 +7,4 @@ define service ZUI_GD_TRAVEL_M {
   expose /DMO/I_Connection;
   expose /DMO/I_Carrier;
   expose /DMO/I_Flight;
-  expose I_Currency;
 }

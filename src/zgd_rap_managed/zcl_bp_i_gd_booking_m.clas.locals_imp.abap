@@ -12,6 +12,19 @@ ENDCLASS.
 CLASS lhc_Booking IMPLEMENTATION.
 
   METHOD calculateTotalPrice.
+
+    READ ENTITIES OF zi_gd_travel_m IN LOCAL MODE
+    ENTITY Booking BY \_Travel
+    FIELDS ( Traveluuid )
+    WITH CORRESPONDING #( keys )
+    RESULT DATA(travel).
+
+    MODIFY ENTITIES OF zi_gd_travel_m IN LOCAL MODE
+     ENTITY Travel
+     EXECUTE recalculatePrice
+     FROM CORRESPONDING #( Travel ).
+
+
   ENDMETHOD.
 
   METHOD setBookingId.

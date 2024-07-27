@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access Control Travel Projection'
+@MappingRole: true
+define role ZC_GD_TRAVEL {
+    grant
+        select
+            on
+                ZC_GD_TRAVEL
+                    where
+                        inheriting conditions from entity ZI_GD_TRAVEL;
+                        
+}

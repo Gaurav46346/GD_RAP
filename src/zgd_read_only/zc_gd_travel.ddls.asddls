@@ -1,5 +1,5 @@
 @EndUserText.label: 'Travel Projection View'
-@AccessControl.authorizationCheck: #NOT_REQUIRED
+@AccessControl.authorizationCheck: #NOT_REQUIRED //#MANDATORY
 @Search.searchable: true
 @Metadata.allowExtensions: true
 define root view entity ZC_GD_TRAVEL

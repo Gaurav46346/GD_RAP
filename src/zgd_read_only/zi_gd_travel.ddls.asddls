@@ -1,4 +1,4 @@
-@AccessControl.authorizationCheck: #NOT_REQUIRED
+@AccessControl.authorizationCheck: #MANDATORY
 @EndUserText.label: 'Travel Interface View'
 
 define root view entity ZI_GD_TRAVEL

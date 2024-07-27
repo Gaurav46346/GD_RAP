@@ -1,0 +1,4 @@
+@EndUserText.label: 'Servide Definition Flight Demo'
+define service ZCE_GD_FLIGHT_SRV {
+  expose ZCE_GD_FLIGHT as Flight;
+}

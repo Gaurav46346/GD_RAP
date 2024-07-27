@@ -94,10 +94,16 @@ annotate entity ZC_GD_TRAVEL_M with
                    { type: #FOR_ACTION, dataAction: 'acceptTravel', label: 'Accept Travel' },
                    { type: #FOR_ACTION, dataAction: 'rejectTravel', label: 'Reject Travel' }
                    ]
-  @UI.identification: [{ position: 70 }]
+  @UI.identification: [{ position: 70 },
+                     { type: #FOR_ACTION, dataAction: 'acceptTravel', label: 'Accept Travel' },
+                   { type: #FOR_ACTION, dataAction: 'rejectTravel', label: 'Reject Travel' }]
   @UI.dataPoint:{ qualifier: 'Status', title: 'Status' , criticality: 'OverallStatusCriticality' }
 
   OverallStatus;
+  @UI.hidden: true
+  LocalLastChangedAt;
+  @UI.hidden: true
+  LastChangedAt;
 
 
 }

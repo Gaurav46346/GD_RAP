@@ -23,6 +23,7 @@ define root view entity ZC_GD_TRAVEL_M
       EndDate,
       BookingFee,
       TotalPrice,
+//      @Consumption.valueHelpDefinition: [{ entity: { name: 'I_Currency' , element: 'Currency' } }]
       CurrencyCode,
       @Search.defaultSearchElement: true
       Description,

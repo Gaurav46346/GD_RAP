@@ -1,0 +1,11 @@
+@EndUserText.label: 'PFCG Role for Customer'
+@MappingRole: true
+define role ZI_GD_TRAVEL_PFCG {
+    grant 
+        select
+            on
+                ZI_GD_TRAVEL
+                    where
+                        (CustomerId) = aspect pfcg_auth(ZAUTH_CUST, ZAUTH_CUST,  ACTVT = '03') OR true;
+                        
+}

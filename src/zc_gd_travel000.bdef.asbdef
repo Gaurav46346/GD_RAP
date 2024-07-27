@@ -1,0 +1,10 @@
+projection implementation in class ZBP_C_GD_TRAVEL000 unique;
+strict ( 2 );
+define behavior for ZC_GD_TRAVEL000 alias ZcGdTravel000
+use etag
+
+{
+  use create;
+  use update;
+  use delete;
+}

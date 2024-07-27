@@ -1,0 +1,15 @@
+managed ;
+//implementation in class zbp_i_gd_student unique;
+//strict ( 2 );
+
+define behavior for ZI_GD_STUDENT //alias <alias_name>
+persistent table zgd_student
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Rollno;
+}
